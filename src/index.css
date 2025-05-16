@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  animation: typewriter-multiline 3.5s steps(80, end) forwards, blink 0.75s step-end infinite;
+}
